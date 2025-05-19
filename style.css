@@ -38,6 +38,7 @@ body {
   max-width: 540px;
   margin: 48px auto 0 auto;
   background: rgba(12, 12, 12, 0.97);
+  background: transparent;
   border: 2px solid var(--terminal-green);
   box-shadow: 0 0 32px var(--terminal-shadow), 0 0 8px var(--terminal-green);
   border-radius: 12px;
@@ -325,4 +326,88 @@ body {
 .icon-link:focus {
   outline: none;
   box-shadow: 0 0 16px #00ff00, 0 0 32px #00ff00;
+}
+
+@media (max-width: 600px) {
+  .terminal-container {
+    background: transparent;
+    width: 98vw;
+    max-width: 99vw;
+    margin: 16px auto 0 auto;
+    padding: 0;
+  }
+
+  .terminal-header {
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 1.1em;
+    padding: 8px 6px;
+    gap: 8px;
+  }
+
+  .terminal-title {
+    font-size: 1em;
+    margin: 0 0 6px 0;
+  }
+
+  .controls {
+    gap: 4px;
+  }
+
+  .lang-btn {
+    margin-left: 0;
+    margin-top: 8px;
+    width: 100%;
+    padding: 6px 0;
+    font-size: 1em;
+  }
+
+  .social-icons {
+    gap: 6px;
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .icon-link .ph {
+    font-size: 1.3em;
+  }
+
+  .terminal {
+    padding: 18px 6px 16px 6px;
+    font-size: 1em;
+  }
+
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+  }
+
+  .contact-form {
+    padding: 18px 6px 12px 6px;
+    margin: 24px auto 0 auto;
+  }
+
+  .contact-title {
+    font-size: 1.2em;
+    margin-bottom: 18px;
+  }
+
+  .contact-label {
+    font-size: 1em;
+    margin: 12px 0 4px 0;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1em;
+    padding: 8px 6px;
+  }
+
+  .contact-btn {
+    font-size: 1em;
+    padding: 10px 0;
+    margin-top: 12px;
+  }
 }
