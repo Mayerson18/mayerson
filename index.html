@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mayerson Jimenez | CV Terminal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.cdnfonts.com/css/vt323" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+</head>
+<body>
+  <canvas id="matrix-bg"></canvas>
+  <div class="terminal-container">
+    <div class="terminal-header">
+      <div class="controls">
+        <div class="control close"></div>
+        <div class="control minimize"></div>
+        <div class="control maximize"></div>
+      </div>
+      <div class="terminal-title">Mayerson's CV</div>
+      <button id="lang-toggle" class="lang-btn">EN</button>
+      <div class="social-icons">
+        <a href="https://github.com/Mayerson18" target="_blank" title="GitHub" class="icon-link"><i class="ph ph-github-logo"></i></a>
+        <a href="https://linkedin.com/in/mayerson-jimenez-b75894154" target="_blank" title="LinkedIn" class="icon-link"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="https://mnf.red/mayerson" target="_blank" title="Portfolio" class="icon-link"><i class="ph ph-globe"></i></a>
+        <a href="https://wa.me/573506208514" target="_blank" title="WhatsApp" class="icon-link"><i class="ph ph-whatsapp-logo"></i></a>
+      </div>
+      <div style="width: 10px;"></div>
+    </div>
+    <div class="terminal">
+      <img src="assets/yo.jpg" alt="Foto de Mayerson Jimenez" class="profile-pic" />
+      <div id="terminal-text" class="terminal-text"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="matrix.js"></script>
+
+  <form class="contact-form">
+    <h2 class="contact-title">CONTACT ME</h2>
+    <label class="contact-label">$ NAME:</label>
+    <input type="text" name="name" placeholder="Your name" required />
+
+    <label class="contact-label">$ EMAIL:</label>
+    <input type="email" name="email" placeholder="Your email" required />
+
+    <label class="contact-label">$ MESSAGE:</label>
+    <textarea name="message" placeholder="Your message here..." required></textarea>
+
+    <button type="submit" class="contact-btn">SEND MESSAGE</button>
+  </form>
+</body>
+</html>
